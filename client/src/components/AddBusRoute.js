@@ -16,7 +16,7 @@ function AddBusRoute() {
     useEffect(() => {
       const handleFetch = async () => {
         try {
-          const response = await axios.post("http://localhost:5000/getroutes");
+          const response = await axios.post("https://bustimingin-backend.onrender.com/getroutes");
           const busData = response.data.alldata;
           setAllItems(busData);
         } catch (err) {
@@ -51,7 +51,7 @@ function AddBusRoute() {
       let response;
       if (editId == null) {
         response = await axios.post(
-          "http://localhost:5000/addroute",
+          "https://bustimingin-backend.onrender.com/addroute",
           formData,
           {
             headers: {
@@ -61,7 +61,7 @@ function AddBusRoute() {
         );
       } else {
         response = await axios.post(
-          "http://localhost:5000/updateRoute",
+          "https://bustimingin-backend.onrender.com/updateRoute",
           formData,
           {
             headers: {
@@ -86,7 +86,7 @@ function AddBusRoute() {
   const handleDelete = async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:5000/deleteBusRoute`,
+        `https://bustimingin-backend.onrender.com/deleteBusRoute`,
         {
           data: { id },
         }

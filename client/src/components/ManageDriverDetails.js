@@ -18,7 +18,7 @@ const ManageDriverDetails = () => {
 
     const fetchDriverDetails = async () => {
         try {
-            const response = await axios.post('http://localhost:5000/admin/driverdetails');
+            const response = await axios.post('https://bustimingin-backend.onrender.com/admin/driverdetails');
             setDriverDetails(response.data.drivers);
         } catch (error) {
             console.error('Error fetching driver details:', error);
@@ -29,9 +29,9 @@ const ManageDriverDetails = () => {
         e.preventDefault();
         try {
             if (editingId) {
-                await axios.put(`http://localhost:5000/api/admin/driverdetails/${editingId}`, form);
+                await axios.put(`https://bustimingin-backend.onrender.com/api/admin/driverdetails/${editingId}`, form);
             } else {
-                await axios.post('http://localhost:5000/api/admin/driverdetails', form);
+                await axios.post('https://bustimingin-backend.onrender.com/api/admin/driverdetails', form);
             }
             fetchDriverDetails();
             setForm({
@@ -53,7 +53,7 @@ const ManageDriverDetails = () => {
 
     const handleDelete = async (id) => {
         try {
-            await axios.delete(`http://localhost:5000/api/admin/driverdetails/${id}`);
+            await axios.delete(`https://bustimingin-backend.onrender.com/api/admin/driverdetails/${id}`);
             fetchDriverDetails();
         } catch (error) {
             console.error('Error deleting driver detail:', error);

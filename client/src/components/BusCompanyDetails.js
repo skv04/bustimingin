@@ -11,7 +11,7 @@ const BusCompanyDetails = () => {
     useEffect(()=>{
         const fetchCompanyDetails = async () => { 
             try {// Debugging line
-                const response = await axios.post(`http://localhost:5000/api/getcompanydetails`);                
+                const response = await axios.post(`https://bustimingin-backend.onrender.com/api/getcompanydetails`);                
                 setSearchResults(response.data.companyDetails);
             } catch (error) {
                 console.error('Error fetching company details:', error);

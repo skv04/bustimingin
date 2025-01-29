@@ -28,7 +28,7 @@ const BusLocation = () => {
 
     const getLocation = async () => {
       try {
-        const response = await axios.post("http://localhost:5000/getlocation", {
+        const response = await axios.post("https://bustimingin-backend.onrender.com/getlocation", {
           busnum,
         });
         if (response.data && response.data.length > 0) {

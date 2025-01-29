@@ -17,7 +17,7 @@ const ManageCompanyDetails = () => {
 
     const fetchCompanyDetails = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/admin/getcompanydetails');
+            const response = await axios.get('https://bustimingin-backend.onrender.com/admin/getcompanydetails');
             setCompanyDetails(response.data.companyDetails);
         } catch (error) {
             console.error('Error fetching company details:', error);
@@ -28,9 +28,9 @@ const ManageCompanyDetails = () => {
         e.preventDefault();
         try {
             if (editingId) {
-                await axios.put(`http://localhost:5000/api/admin/companydetails/${editingId}`, form);
+                await axios.put(`https://bustimingin-backend.onrender.com/api/admin/companydetails/${editingId}`, form);
             } else {
-                await axios.post('http://localhost:5000/api/admin/companydetails', form);
+                await axios.post('https://bustimingin-backend.onrender.com/api/admin/companydetails', form);
             }
             fetchCompanyDetails();
             setForm({
@@ -51,7 +51,7 @@ const ManageCompanyDetails = () => {
 
     const handleDelete = async (id) => {
         try {
-            await axios.post(`http://localhost:5000/api/admin/deletecompanydetails`,{id});
+            await axios.post(`https://bustimingin-backend.onrender.com/api/admin/deletecompanydetails`,{id});
             fetchCompanyDetails();
         } catch (error) {
             console.error('Error deleting company detail:', error);

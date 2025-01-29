@@ -13,7 +13,7 @@ function Routes() {
   useEffect(() => {
     const handleFetch = async () => {
       try {
-        const response = await axios.post("http://localhost:5000/getroutes", {
+        const response = await axios.post("https://bustimingin-backend.onrender.com/getroutes", {
           Source,
           Destination,
           time,

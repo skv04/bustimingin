@@ -9,7 +9,7 @@ const DriverDetails = () => {
 
     const handleSearch = async () => {
         try {
-            const response = await axios.post(`http://localhost:5000/api/driverdetails`,{searchTerm});
+            const response = await axios.post(`https://bustimingin-backend.onrender.com/api/driverdetails`,{searchTerm});
             setSearchResults(response.data.drivers)            
         } catch (error) {
             console.error('Error fetching driver details:', error);
