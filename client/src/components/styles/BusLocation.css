@@ -1,0 +1,69 @@
+
+/* Container for the entire bus location section */
+.bus-location-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+  }
+  
+  
+  /* Styling for the card that contains bus details */
+  .bus-card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    z-index: -1;
+  }
+  
+  /* Card body */
+  .bus-card .card-body {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  /* Bus Image section */
+  .bus-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #f0f0f0;
+  }
+  
+  /* No image available placeholder */
+  .no-image-placeholder {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    color: #888;
+  }
+  
+  /* Card details */
+  .bus-card-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  /* Map container */
+  .map-container {
+    width: 50%;
+    height: 400px;
+    padding: 20px;
+    margin-top: 50px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  

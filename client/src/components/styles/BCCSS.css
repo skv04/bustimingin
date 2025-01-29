@@ -1,0 +1,134 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .main-content {
+    max-width: 1200px;
+    margin: 80px auto 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Heading */
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #222;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    width: 300px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-bar input:focus {
+    border-color: #007bff;
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-bar button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Results Table */
+  .company-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .company-list th, 
+  .company-list td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .company-list th {
+    background-color: #f4f4f4;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .company-list tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .company-list tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .company-list td {
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .company-list p {
+    text-align: center;
+    color: #999;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .search-bar {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .search-bar input {
+      width: 100%;
+    }
+  
+    .company-list table {
+      font-size: 0.85rem;
+    }
+  
+    .main-content {
+      padding: 15px;
+    }
+  }
+  

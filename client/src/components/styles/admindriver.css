@@ -1,0 +1,146 @@
+.manage-details {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px; /* Light background for contrast */
+}
+
+.manage-details h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px; /* Slightly larger font size for readability */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s ease-in-out;
+}
+
+input:focus {
+    border: 1px solid #abc3db;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #7e8b98;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #8aacc8; /* Slightly darker shade on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+th {
+    background: #9da5ac;
+    color: white;
+}
+
+td {
+    color: #333;
+}
+
+button {
+    margin-right: 5px;
+}
+
+button.delete-btn {
+    background-color: #dc3545;
+}
+
+button.delete-btn:hover {
+    background-color: #b02a37;
+}
+
+@media (max-width: 900px) {
+    .manage-details {
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    form {
+        gap: 12px;
+    }
+
+    input {
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+
+    table {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Stack form inputs vertically for smaller screens */
+    form {
+        display: grid;
+        gap: 8px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .manage-details {
+        padding: 12px;
+        max-width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    th {
+        font-size: 15px;
+    }
+
+    td {
+        font-size: 14px;
+    }
+}
