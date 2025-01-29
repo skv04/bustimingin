@@ -10,7 +10,7 @@ var mongoose = require("mongoose");
 var cors = require("cors");
 
 mongoose
-  .connect("mongodb+srv://selva:selva2004@cluster0.wo0nx.mongodb.net/bustimingin", {
+  .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
